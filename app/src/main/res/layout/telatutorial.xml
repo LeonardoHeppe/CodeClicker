@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutClickTutorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    android:clipToPadding="false"
+    tools:context=".TelaTutorial">
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="CC"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:text="Click na tela para ganhar pontos."
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTutorial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaste pontos com upgrades para facilitar seu progresso dentro do jogo."
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTutorial3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
+        android:text="Alcance 1.000.000 pontos para ganhar o jogo. "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

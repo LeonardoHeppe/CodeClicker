@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutClickJogo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#171717"
+    tools:context=".TelaJogo">
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="CC"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtValorClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="+1"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPonto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtPonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.000.000"
+        android:textColor="#4CAF50"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutUpgrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="26dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgProg"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/programador" />
+
+            <TextView
+                android:id="@+id/txtUpgradeAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAlignment="center"
+                android:textColor="#4CAF50"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgClick"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/clickupgrade" />
+
+            <TextView
+                android:id="@+id/txtUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textAlignment="center"
+                android:textColor="#4CAF50" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgFecharUpgrades"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="3dp"
+            android:background="#00FFFFFF"
+            android:rotation="90"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/triangulo"
+            tools:layout_editor_absoluteX="177dp"
+            tools:layout_editor_absoluteY="457dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgUpgrades"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#00FFFFFF"
+        android:rotation="90"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutUpgrades"
+        app:layout_constraintStart_toStartOf="@+id/layoutUpgrades"
+        app:layout_constraintTop_toTopOf="@+id/layoutUpgrades"
+        app:srcCompat="@drawable/triangulo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
